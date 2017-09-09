@@ -1,0 +1,27 @@
+{
+  "name": "@pomegranate/framework-utils",
+  "version": "0.0.0",
+  "description": "Shared internal utility modules for the Pomegranate framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test FORCE_COLOR=1 tap -R spec --cov test/unit/*.js test/integration/**/*.js",
+    "test:report": "NODE_ENV=test FORCE_COLOR=1 tap -R spec --cov --coverage-report=lcov test/unit/*.js test/integration/**/*.js",
+    "test:file": "NODE_ENV=test FORCE_COLOR=1 tap -R spec"
+  },
+  "keywords": [
+    "Pomegranate",
+    "Pomegranate-structural"
+  ],
+  "author": "Jim Bulkowski <jim.b@paperelectron.com> (http://paperelectron.com)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chalk": "^2.1.0",
+    "debug": "^3.0.1",
+    "fs-extra": "^4.0.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "tap": "^10.7.2"
+  }
+}
