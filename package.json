@@ -15,7 +15,7 @@
   "author": "Jim Bulkowski <jim.b@paperelectron.com> (http://paperelectron.com)",
   "license": "MIT",
   "dependencies": {
-    "@pomegranate/framework-logger": "^0.0.1",
+    "@pomegranate/framework-logger": "0.1.0",
     "bluebird": "^3.5.0",
     "chalk": "^2.1.0",
     "debug": "^3.0.1",

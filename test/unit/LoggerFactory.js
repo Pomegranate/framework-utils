@@ -9,6 +9,7 @@
 
 var tap = require('tap');
 var LoggerFactory = require('../../lib/LoggerFactory');
+
 var Output = {
   chalk: require('chalk')
 }
