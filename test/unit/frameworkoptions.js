@@ -117,8 +117,10 @@ tap.test('Parses Raw framework options correctly explicit plugin dir', function(
     parentDirectory: parentDir,
     verbose: true,
     colors: true,
+    logLevel: 0,
     logger: console
   }, Errors)
+
   t.plan(7)
   t.equal(setPluginDir.pluginDirectory, pluginDir, 'Sets pluginDirectory correctly')
   t.equal(setPluginDir.pluginSettingsDirectory.path, pluginSettingsDir, 'Sets pluginSettingsDirectory correctly')

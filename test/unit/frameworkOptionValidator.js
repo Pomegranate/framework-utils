@@ -21,3 +21,12 @@ tap.test('Directory Existance', (t) => {
   t.notOk(frmVal.dirExists(missing), 'Returns false for missing file/directory')
   t.end()
 })
+
+tap.test('Zero not false', (t) => {
+  t.equal(frmVal.ZnotF(0, 2), 0, 'Returns numerical value 0 if present')
+  t.equal(frmVal.ZnotF(null, 2), 2, 'Returns default value if not a number - null.')
+  t.equal(frmVal.ZnotF({}, 2), 2, 'Returns default value if not a number - object.')
+  t.equal(frmVal.ZnotF([], 2), 2, 'Returns default value if not a number - array.')
+  t.equal(frmVal.ZnotF('hello', 2), 2, 'Returns default value if not a number - string.')
+  t.end()
+})
