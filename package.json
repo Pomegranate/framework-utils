@@ -1,6 +1,6 @@
 {
   "name": "@pomegranate/framework-utils",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Shared internal utility modules for the Pomegranate framework.",
   "main": "index.js",
   "scripts": {
