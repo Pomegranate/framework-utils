@@ -13,6 +13,7 @@
  */
 
 // Re-export external modules to control downstream dependencies.
+
 exports.bluebird =require('bluebird')
 exports.debug = require('debug')
 exports.lodash = require('lodash')
@@ -23,6 +24,7 @@ exports.frameworkMessages = require('./lib/frameworkMessages')
 exports.frameworkOptionValidator = require('./lib/frameworkOptionValidator')
 exports.frameworkOptionParser = require('./lib/framworkOptionParser')
 exports.loggerFactory = require('@pomegranate/framework-logger').LoggerFactory
+exports.logManager = require('@pomegranate/framework-logger').LogManager
 exports.nameGenerator = require('./lib/nameGenerator')
 exports.prefixGenerator = require('./lib/prefixGenerator')
 exports.prefixSelector = require('./lib/prefixSelector')
