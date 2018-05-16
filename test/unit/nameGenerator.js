@@ -43,5 +43,10 @@ tap.test('Is idempotent', function(t) {
     c.equal(SomeFancyPluginName, 'SomeFancyPluginName', 'SOME_fancy-PLUGIN_name => SomeFancyPluginName')
     c.equal(generate(SomeFancyPluginName), 'SomeFancyPluginName', 'SomeFancyPluginName => SomeFancyPluginName')
   })
+  
+  t.test('Namespace', (t) => {
+    let someNamespacedPlugin = generate('@some/Package')
+    console.log(someNamespacedPlugin)
+  })
 
 })
